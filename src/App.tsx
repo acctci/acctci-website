@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './pages/home/Home';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import BackToTopBtn from './components/BackToTopBtn';
+import About from './pages/about/About';
+import Gallery from './pages/gallery/Gallery';
+import Directors from './pages/directors/Directors';
 
 function App() {
+ 
+  const location = useLocation()
+
+  React.useEffect( () => {
+     window.scroll({ top: 0, behavior: 'auto', left: 0 })
+  }, [location.pathname] )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/about" element={ <About /> } />
+      <Route path="/gallery" element={ <Gallery /> } />
+      <Route path="/members" element={ <Directors /> } />
+    </Routes>
+    <BackToTopBtn />
+  </React.Fragment>
   );
 }
 

@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "tab.activeForeground": "#ffffff", // Change this to the desired color for active tabs
+        "tab.inactiveForeground": "#ffffff", // Change this to the desired color for inactive tabs
+        "tab.activeBackground": "#02a007", // Change this to the desired color for active tabs
+       "tab.inactiveBackground": "#2a2a2a",
+       "gitDecoration.modifiedResourceForeground": "#fac05c",
+       "gitDecoration.untrackedResourceForeground": "#a7fcff"
+    }
+    
+}
