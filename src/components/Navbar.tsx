@@ -11,19 +11,16 @@ const Navbar = () => {
 
   return (
     <nav
-    className="relative flex w-full flex-wrap items-center justify-between bg-blue-500 py-3 lg:py-3"
+    className="relative flex w-full flex-wrap items-center justify-between bg-blue-500 py-1"
     data-twe-navbar-ref>
     <div className="flex w-full flex-wrap items-center justify-between px-3">
-        <div>
-        <a className="mx-2 my-1 bg-white px-1 py-2 flex items-center lg:mb-0 lg:mt-0" href="#">
+        <Link className="" to="/">
             <img
-            className="me-2"
-            src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
-            style={{height: 15}}
-            alt="TE Logo"
+            className="me-2 block w-[70px] h-[70px] object-cover rounded-full"
+            src="/images/logo.PNG"
+            alt="ACCTCI Logo"
             loading="lazy" />
-        </a>
-        </div>
+        </Link>
         <button
         className="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
         type="button"
@@ -56,7 +53,7 @@ const Navbar = () => {
             className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
             data-twe-nav-item-ref>
             <a
-                className="text-white uppercase  text-xs font-semibold transition duration-200 hover:text-gray-100 hover:ease-in-out focus:text-gray-100 active:text-gray-100 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                className="text-white uppercase  text-xs font-semibold md:font-light transition duration-200 hover:text-gray-100 hover:ease-in-out focus:text-gray-100 active:text-gray-100 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
                 aria-current="page"
                 href="#"
                 style={{letterSpacing:1}}
@@ -70,7 +67,7 @@ const Navbar = () => {
                to={'/'}
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
-                className="me-3 inline-block text-white rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal focus:outline-none focus:ring-0">
+                className="me-3 inline-block font-medium text-white rounded px-2 pb-2 pt-2.5 text-xs uppercase leading-normal focus:outline-none focus:ring-0">
                Home
             </Link>
             <Link
@@ -81,10 +78,17 @@ const Navbar = () => {
                About
             </Link>
             <Link
-                to={'/gallery'}
+                to={'/contact'}
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 className="me-3 inline-block text-white rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal focus:outline-none focus:ring-0">
+               Contact
+            </Link>
+            <Link
+                to={'/gallery'}
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+                className="me-3 hidden inline-block text-white rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal focus:outline-none focus:ring-0">
                  Gallery
             </Link>
             <Link
@@ -92,7 +96,7 @@ const Navbar = () => {
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 className="me-3 inline-block text-white rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal focus:outline-none focus:ring-0">
-               Members
+               Board Of Directors
             </Link>
         </div>
         </div>

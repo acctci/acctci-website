@@ -11,7 +11,7 @@ const Home = () => {
        <Navbar />
        <header 
            style={{ backgroundImage: 'url(/images/pexels-pixabay-290275.jpg)' }} 
-           className='h-[650px] md:h-[550px] w-full bg-cover bg-no-repeat'
+           className='h-[650px] banner md:h-[550px] w-full bg-cover bg-no-repeat'
         >
           <div className='h-full w-full flex items-center bg-[rgba(0,0,0,0.7)]'>
                <div>
@@ -64,11 +64,11 @@ const Home = () => {
        <section className='mt-12 p-5 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-5'>
             <div>
                 <h2 className='text-4xl font-semibold text-gray-900'> Who We Are? </h2>
-                <h4 className='capitalize text-blue-950 font-medium text-lg mt-3'>
+                <h4 className='capitalize text-blue-950 font-medium text-md mt-3'>
                   We Are The  umbrella organization for various affiliate member Chamber 
                   of Commerce Trade and Industries within Africa and Caribbean.
                 </h4>
-                <p style={{ lineHeight: 1.7 }} className='text-md mt-3 font-light text-blue-950'>
+                <p style={{ lineHeight: 1.7 }} className='text-md mt-3 font-light mb-8 text-blue-950'>
                   The African Caribbean Chamber of Trade Commerce and Industry 
                   reorganizing the role of the African Union as the umbrella organization 
                   for Africa wishes to partner in several areas in the advancement of the 
@@ -78,11 +78,11 @@ const Home = () => {
                   collaboration with policy maker such as the African union we can 
                   have the figure over 1.2 billion over the period of three years.
               </p>
-              <button className='bg-blue-600 text-white py-2 px-12 rounded-full mt-3'>
+              <Link to={'/about'} className='bg-blue-600 text-white py-2 px-12 rounded-full'>
                   Learn More <i className='bi bi-arrow-right ml-2'></i>
-              </button>
+              </Link>
             </div>
-             <div className=' md:p-8'>
+             <div className='mt-5 md:mt-0 md:p-8'>
                <img
                   src="/images/about.jfif" alt="about us" 
                   className='h-full w-full object-cover rounded-2xl' 
@@ -127,12 +127,12 @@ const Home = () => {
                               and the Caribbean, ensuring cohesive and unified action.
                           </p>
                       </div>
-                      <div className='shadow-2xl p-9  rounded-xl text-center'>
-                          <i className='text-5xl text-blue-950 mb-2 bi bi-intersect'></i>
-                          <h4 className='text-xl mt-3 text-center text-blue-950'>
+                      <div className='shadow-2xl p-9 bg-blue-500 rounded-xl text-center'>
+                          <i className='text-5xl text-white mb-2 bi bi-intersect'></i>
+                          <h4 className='text-xl mt-3 text-center text-white'>
                              Multi-Sector Engagement
                           </h4>
-                          <p  style={{lineHeight:1.5}} className='mt-3 text-sm text-center font-light'>
+                          <p  style={{lineHeight:1.5}} className='mt-3 text-sm text-white text-center font-light'>
                              Championing initiatives across diverse sectors such as Education, Tourism, 
                              Agriculture, Construction, Financial Services, Energy, Healthcare,
                               Transportation, and Business Services to promote comprehensive 

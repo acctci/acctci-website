@@ -35,3 +35,21 @@ body {
     width: 135% !important;
   }
 }
+/* Define the animation */
+@keyframes zoom {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+/* Apply the animation to your element */
+.banner {
+  background-size: 100%; /* Initial size */
+  animation: zoom 10s infinite alternate; /* Adjust duration and other properties as needed */
+}

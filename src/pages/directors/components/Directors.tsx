@@ -27,7 +27,7 @@ const Directors = () => {
                 <h2 className="text-md mt-1 text-blue-950 text-center">
                     {director.role}
                 </h2>
-                <p style={{lineHeight: 1.8}} className=" font-light text-sm text-justify">
+                <p style={{lineHeight: 1.8}} className="mt-2 font-light text-sm text-justify">
                      {director.description}
                 </p>
              </div>

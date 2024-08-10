@@ -5,6 +5,7 @@ import BackToTopBtn from './components/BackToTopBtn';
 import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
 import Directors from './pages/directors/Directors';
+import Contact from './pages/contact/Contact';
 
 function App() {
  
@@ -19,8 +20,12 @@ function App() {
     <Routes>
       <Route path="/" element={ <Home /> } />
       <Route path="/about" element={ <About /> } />
-      <Route path="/gallery" element={ <Gallery /> } />
+      {/*
+        Reserved for the future
+        <Route path="/gallery" element={ <Gallery /> } />
+        */}
       <Route path="/members" element={ <Directors /> } />
+      <Route path="/contact" element={ <Contact /> } />
     </Routes>
     <BackToTopBtn />
   </React.Fragment>
