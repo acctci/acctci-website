@@ -57,6 +57,9 @@ const Contact: React.FC = () => {
                     <h3 className='mt-1 text-sm mb-3'> Get In Touch Directly With Us For Any Inquiries</h3>
                     <a href="tel:+5926016392" className="text-sm text-blue-950 pt-8"> 
                         &nbsp; +592-601-6392
+                     </a> <br />
+                     <a href="mailto:info@acctci.org" className="text-sm text-blue-950 pt-8"> 
+                        &nbsp; info@acctci.org
                      </a>
                 </div>
             </div>
